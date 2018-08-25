@@ -1,0 +1,13 @@
+<hr>
+
+<div>
+    <input [(ngModel)] = "userName" class = "form-control" type = "text" />
+    <h4 class = "userName" > {{ userName }} </h4>
+</div>
+
+<hr>
+
+<div>
+    <!-- <button class = "btn btn-outline-primary btn-lg btnResetUserName" [disabled] = "isUserNameEmpty" > RESET </button> -->
+    <button class = "btn btn-primary btn-lg btnResetUserName" [disabled] = "isUserNameValid()" (click) = "resetUserName()" > RESET </button>
+</div>

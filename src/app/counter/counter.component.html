@@ -1,0 +1,15 @@
+
+<div class = "counter" >
+    <button class = "btn btn-primary" (click) = "countLimit()" > Display Details </button>
+    <p *ngIf = "showSecret" > Secret Password = LUnA </p>
+
+    <hr>
+
+    <div *ngFor = "let logItem of logs; let date of dates; let i = index"
+        [ngStyle] = " { backgroundColor: logItem >= 5 ? 'grey' : 'transparent' } "
+        [ngClass] = " { whiteText: logItem >= 5 } "
+        class = "logCount" >
+        {{ i }} : {{ logItem }} - {{ date }}
+    </div>
+    
+</div>

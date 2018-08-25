@@ -1,0 +1,22 @@
+.counter {
+    border: 1px dotted rgb(199, 199, 199);
+    border-radius: 30px;
+    padding: 30px;
+    width: 50%;
+}
+
+.logCount {
+    border: 1px dotted rgb(199, 199, 199);
+    border-radius: 30px;
+    padding: 30px;
+    width: 15%;
+    text-align: center;
+}
+
+.reachedFive.logCount {
+    background-color: rgb(87, 245, 245);
+}
+
+.whiteText {
+    color: rgb(255, 255, 255);
+}

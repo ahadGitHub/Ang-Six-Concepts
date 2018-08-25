@@ -1,0 +1,22 @@
+.directive {
+    margin: auto;
+    width: 30%;
+}
+
+.btnAddServer {
+    float: left;
+}
+
+.row {
+    width: 100%;
+}
+
+.container, .userProfile {
+    padding: 100px;
+    float: left;
+    width: 50%;
+}
+
+.cont {
+    min-height: 900px;
+}

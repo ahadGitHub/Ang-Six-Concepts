@@ -1,0 +1,10 @@
+.form-control {
+    width: 70%;
+    border-radius: 20px;
+}
+
+.userName {
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+}

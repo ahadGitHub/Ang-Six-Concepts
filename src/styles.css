@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+ * You can add global styles to this file, and also import other style files
+ * Bootstrap CSS
+ */
+@import '~bootstrap/dist/css/bootstrap.css';
+
+html {
+    font-size: 100%;
+}
+
+body {
+    padding: 30px;
+}
+
+.parent {
+    height: 80px;
+    widows: 80px;
+    background: green;
+}

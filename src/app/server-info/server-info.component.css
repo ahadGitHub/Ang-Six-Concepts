@@ -1,0 +1,25 @@
+.btnAddServer {
+    border: 1px dotted rgb(212, 210, 210);
+    border-radius: 20px;
+    padding: 30px;
+    min-height: 200px;
+    width: 150%;
+}
+
+.form-control {
+    border-radius: 20px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.serverName, .clusterName {
+    padding: 30px;
+    text-align: center;
+}
+
+.online {
+    color: white;
+}

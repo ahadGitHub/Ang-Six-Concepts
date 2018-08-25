@@ -1,0 +1,39 @@
+<h5> The Server Component - from server Component </h5>
+
+<br />
+<hr>
+
+<div>
+    <input type = "text" class = "form-control" (input) = "onUpdateServerName($event)" />
+    <h4 class = "serverName" > {{ newServerName }} </h4>
+</div>
+
+<div class = "btnAddServer" >
+    <div class = "column" >
+        <button class = "btn btn-primary" [disabled] = "!allowNewServer" (click) = "onCreateServer()" > ADD Server </button>
+    </div>
+
+    <div class = "column" >
+        <p> {{ serverCreationStatus }} </p>
+        <p [ngStyle] = "{ backgroundColor: getColor() }" [ngClass] = "{ online: serverStatus === 'online' }" >  {{ serverStatus }} </p>
+        <p [innerText] = "allowNewServer" > </p>
+        <p *ngIf = "allowNewServer; else noServer" > Cluster : {{ clusterName }} </p>
+        <ng-template #noServer>
+            <p> No New Server on this Cluster. </p>
+        </ng-template>
+    </div>
+</div>
+
+<div class = "serversList" *ngFor = "let server of servers" >
+    {{ server }}
+</div>
+
+<hr>
+
+<div class = "inputing" >
+    <hr>
+
+    <input type = "text" class = "form-control" [(ngModel)] = "clusterName" />
+    <h4 class = "clusterName" > {{ clusterName }} </h4>
+    <input type = "text" class = "form-control" [(ngModel)] = "clusterName" />
+</div>
